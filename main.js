@@ -1,6 +1,6 @@
 let fastify = require('fastify')({ logger: true });
 fastify.register(require('fastify-postgres'), {
-    connectionString: 'postgres://postgres:postgres@localhost:5431/sql'
+    connectionString: 'postgres://docker:docker@localhost:5432/docker'
 });
 fastify.addContentTypeParser('application/json', { parseAs: 'string' }, function (req, body, done) {
     try {
