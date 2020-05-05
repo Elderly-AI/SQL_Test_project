@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack -p",
     "watch": "webpack --watch",
-    "start": "webpack -p && node ./main.js"
+    "start": "webpack -p && node ./dist/bundle.js"
   },
   "keywords": [],
   "author": "",
